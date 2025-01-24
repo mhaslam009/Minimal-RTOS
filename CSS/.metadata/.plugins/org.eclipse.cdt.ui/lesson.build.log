@@ -1,0 +1,18 @@
+
+**** Build of configuration Debug for project lesson ****
+
+"C:\\ti\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: GNU Compiler
+"C:/ti/ccs/tools/compiler/gcc-arm-none-eabi-9-2019-q4-major/bin/arm-none-eabi-gcc-9.2.1.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"D:/E Drive/E drive/Embedded/modern_embedded_systems/my_work/lessons/lesson19" -I"D:/E Drive/E drive/Embedded/modern_embedded_systems/my_work/lessons/CMSIS" -I"C:/ti/ccs/tools/compiler/gcc-arm-none-eabi-9-2019-q4-major/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"main.d_raw" -MT"main.o"   -o"main.o" "../main.c"
+subdir_rules.mk:9: recipe for target 'main.o' failed
+In file included from ../main.c:1:
+../TM4C123GH6PM.h:316:10: fatal error: core_cm4.h: No such file or directory
+  316 | #include "core_cm4.h"                               /*!< Cortex-M4 processor and core peripherals                              */
+      |          ^~~~~~~~~~~~
+compilation terminated.
+gmake: *** [main.o] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
